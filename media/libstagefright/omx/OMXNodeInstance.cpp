@@ -1549,7 +1549,7 @@ bool OMXNodeInstance::handleMessage(omx_message &msg) {
         OMX_BUFFERHEADERTYPE *buffer =
             findBufferHeader(msg.u.extended_buffer_data.buffer);
         if (buffer == NULL) {
-            ALOGE("b/25884056 %d", __LINE__);
+            ALOGE("b/25884056");
             return BAD_VALUE;
         }
 
